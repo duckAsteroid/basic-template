@@ -37,10 +37,10 @@ bintray {
     key = System.getenv('BINTRAY_KEY')
     publications = ['mavenJava']
     pkg {
-        name = 'basic-template'
+        name = 'basic-template' // < - EDIT ME
         repo = 'maven'
         userOrg = 'duck-asteroid'
         licenses = ['MIT']
-        vcsUrl = 'https://github.com/duckAsteroid/basic-template.git'
+        vcsUrl = 'https://github.com/duckAsteroid/basic-template.git' // < - EDIT ME
     }
 }
