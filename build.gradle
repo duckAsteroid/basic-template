@@ -37,6 +37,7 @@ bintray {
     key = System.getenv('BINTRAY_KEY')
     publications = ['mavenJava']
     pkg {
+        name = 'basic-template'
         repo = 'maven'
         userOrg = 'duck-asteroid'
         licenses = ['MIT']
