@@ -1,4 +1,43 @@
-apply plugin: 'java'
-version = '1.0.0'
+plugins {
+    id "com.jfrog.bintray" version "1.7.3"
+}
 
+/* Java basics */
+apply plugin: 'java'
+group = 'com.asteroid.duck'
+version = '1.0.0'
 description = 'A template Java project'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.+'
+}
+
+
+/* Add ability to publish JARs to Maven (e.g. bintray) */
+apply plugin: 'maven-publish'
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+
+/* Configuration to publish from travis to bintray */
+bintray {
+    user = System.getenv('BINTRAY_USER')
+    key = System.getenv('BINTRAY_KEY')
+
+    pkg {
+        repo = 'generic'
+        licenses = ['MIT']
+    }
+}
