@@ -1,10 +1,21 @@
 basic-template
 ===========
 
-A basic Java application template using Gradle, Travis-CI and Bintray.
+A basic Java application template using:
+ * Gradle - build managed by Gradle
+ * Travis-CI - continuous integration build server
+ * SonarQube - report on code quality and test coverage
+ * Bintray - Hosts binary releases (Maven2 repo)
 
-This project is built by Travis-CI: 
 ![Build status](https://travis-ci.org/duckAsteroid/basic-template.svg?branch=master)
+
+Getting Started
+---------------
+
+To start a new project you need to:
+
+1. Clone or copy this repository and get ready to push.
+2. Edit all
 
 Download
 -----------

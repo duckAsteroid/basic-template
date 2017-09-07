@@ -11,6 +11,9 @@ description = 'A template Java project'
 
 sourceCompatibility = 1.8
 
+// workaround for sonarqube plugin issue in Gradle 4
+sourceSets.main.output.classesDir = new File(buildDir, "classes/main")
+
 repositories {
     mavenCentral()
     mavenLocal()
