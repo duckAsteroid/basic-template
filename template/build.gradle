@@ -5,9 +5,9 @@ plugins {
 
 /* Java basics */
 apply plugin: 'java'
-group = 'com.asteroid.duck'
-version = '1.0.0'
-description = 'A template Java project'
+group = '{{Org}}'
+version = '{{Version}}'
+description = '{{Description}}'
 
 sourceCompatibility = 1.8
 

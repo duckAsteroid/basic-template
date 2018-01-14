@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * A simple test of the simple hello world class
  */
 public class HelloWorldTest {
     @Test

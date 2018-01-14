@@ -1,23 +1,33 @@
-basic-template
-===========
+gradle
+======
 
-A basic Java application template using:
- * Gradle - build managed by Gradle
- * Travis-CI - continuous integration build server
- * SonarQube - report on code quality and test coverage
- * Bintray - Hosts binary releases (Maven2 repo)
+This is a a [boilr](https://github.com/tmrts/boilr) template for new [Gradle](http://www.gradle.org) projects.
 
-![Build status](https://travis-ci.org/duckAsteroid/basic-template.svg?branch=master)
+Installation
+------------
 
-Getting Started
----------------
+First you must download and install [boilr](https://github.com/tmrts/boilr). 
 
-To start a new project you need to:
+Then you can download and install this template as follows:
 
-1. Clone or copy this repository and get ready to push.
-2. Edit all
+```bash
+  $ boilr template download duckAsteroid/gradle-boilr gradle
+```
 
-Download
------------
-This project is available via Maven repo at: https://dl.bintray.com/duck-asteroid/maven/
+NOTE: This is a bash script - for Windows consider using [Cygwin](http://www.cygwin.org) or similar.
 
+Usage
+-----
+
+Replace `foo` and `bar` with your own values...
+
+'''bash
+  $ mkdir foo
+  $ cd foo
+  $ git init
+  $ git remote set-url origin git@github.com:foo/bar.git
+  $ boilr template use gradle
+  $ git add .
+  $ git commit -m "Initial Commit"
+  $ git push
+```
